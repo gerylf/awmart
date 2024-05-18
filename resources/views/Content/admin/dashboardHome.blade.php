@@ -1,225 +1,197 @@
-@extends('Layout.layout')
+@extends('Layout.layoutAdmin')
 
 @section('content')
 
-<!-- SIDEBAR -->
-<section id="sidebar">
-    <a href="#" class="brand">
-        <i class='bx bxs-smile'></i>
-        <span class="text">AdminHub</span>
+<!-- Sidebar -->
+<div class="sidebar">
+    <a href="#" class="logo">
+        <i class='bx bx-code-alt'></i>
+        <div class="logo-name"><span>Asmr</span>Prog</div>
     </a>
-    <ul class="side-menu top">
-        <li class="active">
-            <a href="#">
-                <i class='bx bxs-dashboard'></i>
-                <span class="text">Dashboard</span>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <i class='bx bxs-shopping-bag-alt'></i>
-                <span class="text">My Store</span>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <i class='bx bxs-doughnut-chart'></i>
-                <span class="text">Analytics</span>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <i class='bx bxs-message-dots'></i>
-                <span class="text">Message</span>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <i class='bx bxs-group'></i>
-                <span class="text">Team</span>
-            </a>
-        </li>
+    <ul class="side-menu">
+        <li><a href="#"><i class='bx bxs-dashboard'></i>Dashboard</a></li>
+        <li><a href="#"><i class='bx bx-store-alt'></i>Shop</a></li>
+        <li class="active"><a href="#"><i class='bx bx-analyse'></i>Analytics</a></li>
+        <li><a href="#"><i class='bx bx-message-square-dots'></i>Tickets</a></li>
+        <li><a href="#"><i class='bx bx-group'></i>Users</a></li>
+        <li><a href="#"><i class='bx bx-cog'></i>Settings</a></li>
     </ul>
     <ul class="side-menu">
         <li>
-            <a href="#">
-                <i class='bx bxs-cog'></i>
-                <span class="text">Settings</span>
-            </a>
-        </li>
-        <li>
             <a href="#" class="logout">
-                <i class='bx bxs-log-out-circle'></i>
-                <span class="text">Logout</span>
+                <i class='bx bx-log-out-circle'></i>
+                Logout
             </a>
         </li>
     </ul>
-</section>
-<!-- SIDEBAR -->
+</div>
+<!-- End of Sidebar -->
 
-
-
-<!-- CONTENT -->
-<section id="content">
-    <!-- NAVBAR -->
+<!-- Main Content -->
+<div class="content">
+    <!-- Navbar -->
     <nav>
         <i class='bx bx-menu'></i>
-        <a href="#" class="nav-link">Categories</a>
         <form action="#">
             <div class="form-input">
                 <input type="search" placeholder="Search...">
-                <button type="submit" class="search-btn"><i class='bx bx-search'></i></button>
+                <button class="search-btn" type="submit"><i class='bx bx-search'></i></button>
             </div>
         </form>
-        <input type="checkbox" id="switch-mode" hidden>
-        <label for="switch-mode" class="switch-mode"></label>
-        <a href="#" class="notification">
-            <i class='bx bxs-bell'></i>
-            <span class="num">8</span>
+        <input type="checkbox" id="theme-toggle" hidden>
+        <label for="theme-toggle" class="theme-toggle"></label>
+        <a href="#" class="notif">
+            <i class='bx bx-bell'></i>
+            <span class="count">12</span>
         </a>
         <a href="#" class="profile">
-            <img src="img/people.png">
+            <img src="images/logo.png">
         </a>
     </nav>
-    <!-- NAVBAR -->
 
-    <!-- MAIN -->
+    <!-- End of Navbar -->
+
     <main>
-        <div class="head-title">
+        <div class="header">
             <div class="left">
                 <h1>Dashboard</h1>
                 <ul class="breadcrumb">
-                    <li>
-                        <a href="#">Dashboard</a>
-                    </li>
-                    <li><i class='bx bx-chevron-right'></i></li>
-                    <li>
-                        <a class="active" href="#">Home</a>
-                    </li>
+                    <li><a href="#">
+                            Analytics
+                        </a></li>
+                    /
+                    <li><a href="#" class="active">Shop</a></li>
                 </ul>
             </div>
-            <a href="#" class="btn-download">
-                <i class='bx bxs-cloud-download'></i>
-                <span class="text">Download PDF</span>
+            <a href="#" class="report">
+                <i class='bx bx-cloud-download'></i>
+                <span>Download CSV</span>
             </a>
         </div>
 
-        <ul class="box-info">
+        <!-- Insights -->
+        <ul class="insights">
             <li>
-                <i class='bx bxs-calendar-check'></i>
-                <span class="text">
-                    <h3>1020</h3>
-                    <p>New Order</p>
+                <i class='bx bx-calendar-check'></i>
+                <span class="info">
+                    <h3>
+                        1,074
+                    </h3>
+                    <p>Paid Order</p>
                 </span>
             </li>
-            <li>
-                <i class='bx bxs-group'></i>
-                <span class="text">
-                    <h3>2834</h3>
-                    <p>Visitors</p>
+            <li><i class='bx bx-show-alt'></i>
+                <span class="info">
+                    <h3>
+                        3,944
+                    </h3>
+                    <p>Site Visit</p>
                 </span>
             </li>
-            <li>
-                <i class='bx bxs-dollar-circle'></i>
-                <span class="text">
-                    <h3>$2543</h3>
+            <li><i class='bx bx-line-chart'></i>
+                <span class="info">
+                    <h3>
+                        14,721
+                    </h3>
+                    <p>Searches</p>
+                </span>
+            </li>
+            <li><i class='bx bx-dollar-circle'></i>
+                <span class="info">
+                    <h3>
+                        $6,742
+                    </h3>
                     <p>Total Sales</p>
                 </span>
             </li>
         </ul>
+        <!-- End of Insights -->
 
-
-        <div class="table-data">
-            <div class="order">
-                <div class="head">
+        <div class="bottom-data">
+            <div class="orders">
+                <div class="header">
+                    <i class='bx bx-receipt'></i>
                     <h3>Recent Orders</h3>
-                    <i class='bx bx-search'></i>
                     <i class='bx bx-filter'></i>
+                    <i class='bx bx-search'></i>
                 </div>
                 <table>
                     <thead>
                         <tr>
                             <th>User</th>
-                            <th>Date Order</th>
+                            <th>Order Date</th>
                             <th>Status</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>
-                                <img src="img/people.png">
+                                <img src="images/profile-1.jpg">
                                 <p>John Doe</p>
                             </td>
-                            <td>01-10-2021</td>
+                            <td>14-08-2023</td>
                             <td><span class="status completed">Completed</span></td>
                         </tr>
                         <tr>
                             <td>
-                                <img src="img/people.png">
+                                <img src="images/profile-1.jpg">
                                 <p>John Doe</p>
                             </td>
-                            <td>01-10-2021</td>
+                            <td>14-08-2023</td>
                             <td><span class="status pending">Pending</span></td>
                         </tr>
                         <tr>
                             <td>
-                                <img src="img/people.png">
+                                <img src="images/profile-1.jpg">
                                 <p>John Doe</p>
                             </td>
-                            <td>01-10-2021</td>
-                            <td><span class="status process">Process</span></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img src="img/people.png">
-                                <p>John Doe</p>
-                            </td>
-                            <td>01-10-2021</td>
-                            <td><span class="status pending">Pending</span></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img src="img/people.png">
-                                <p>John Doe</p>
-                            </td>
-                            <td>01-10-2021</td>
-                            <td><span class="status completed">Completed</span></td>
+                            <td>14-08-2023</td>
+                            <td><span class="status process">Processing</span></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-            <div class="todo">
-                <div class="head">
-                    <h3>Todos</h3>
-                    <i class='bx bx-plus'></i>
+
+            <!-- Reminders -->
+            <div class="reminders">
+                <div class="header">
+                    <i class='bx bx-note'></i>
+                    <h3>Remiders</h3>
                     <i class='bx bx-filter'></i>
+                    <i class='bx bx-plus'></i>
                 </div>
-                <ul class="todo-list">
+                <ul class="task-list">
                     <li class="completed">
-                        <p>Todo List</p>
+                        <div class="task-title">
+                            <i class='bx bx-check-circle'></i>
+                            <p>Start Our Meeting</p>
+                        </div>
                         <i class='bx bx-dots-vertical-rounded'></i>
                     </li>
                     <li class="completed">
-                        <p>Todo List</p>
+                        <div class="task-title">
+                            <i class='bx bx-check-circle'></i>
+                            <p>Analyse Our Site</p>
+                        </div>
                         <i class='bx bx-dots-vertical-rounded'></i>
                     </li>
                     <li class="not-completed">
-                        <p>Todo List</p>
-                        <i class='bx bx-dots-vertical-rounded'></i>
-                    </li>
-                    <li class="completed">
-                        <p>Todo List</p>
-                        <i class='bx bx-dots-vertical-rounded'></i>
-                    </li>
-                    <li class="not-completed">
-                        <p>Todo List</p>
+                        <div class="task-title">
+                            <i class='bx bx-x-circle'></i>
+                            <p>Play Footbal</p>
+                        </div>
                         <i class='bx bx-dots-vertical-rounded'></i>
                     </li>
                 </ul>
             </div>
+
+            <!-- End of Reminders-->
+
         </div>
+
     </main>
-    <!-- MAIN -->
-</section>
+
+</div>
+
 <!-- CONTENT -->
 @endsection

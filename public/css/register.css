@@ -1,0 +1,76 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    /* Mengganti font menjadi Montserrat */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('/images/backgroundLoginRegister.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    border: 1px solid #143C85;
+    /* Memberikan border biru tipis */
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    color: #333;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="phoneNumber"] {
+    width: calc(100% - 12px);
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #143C85;
+    color: #fff;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+.login-link {
+    margin-top: 20px;
+    color: #000;
+}
+
+.login-link a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}

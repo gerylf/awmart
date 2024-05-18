@@ -31,3 +31,10 @@ Route::get('/product-details', function () {
 Route::get('/pemesanan', function () {
     return view('content.pemesanan');
 });
+Route::get('/login', function () {
+    return view('content.login');
+});
+
+Route::get('/register', function () {
+    return view('content.register');
+});
