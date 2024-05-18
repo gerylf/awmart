@@ -1,68 +1,72 @@
-@extends('Layout.layout')
+@extends('Layout.admin.layoutAdmin')
 
 @section('content')
 
 @extends('Component.sidebar')
 
-<!-- CONTENT -->
-<section id="content">
-    <!-- NAVBAR -->
+<!-- Main Content -->
+<div class="content">
+    <!-- Navbar -->
     <nav>
+        <i class='bx bx-menu'></i>
         <form action="#">
             <div class="form-input">
                 <input type="search" placeholder="Search...">
-                <button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+                <button class="search-btn" type="submit"><i class='bx bx-search'></i></button>
             </div>
         </form>
-        <a href="#" class="notification">
-            <i class='bx bxs-bell' ></i>
-            <span class="num">8</span>
+        <input type="checkbox" id="theme-toggle" hidden>
+        <label for="theme-toggle" class="theme-toggle"></label>
+        <a href="#" class="notif">
+            <i class='bx bx-bell'></i>
+            <span class="count">12</span>
         </a>
         <a href="#" class="profile">
-            <img src="/images/profile.jpg">
+            <img src="images/logo.png">
         </a>
     </nav>
-    <!-- NAVBAR -->
+    <!-- End of Navbar -->
 
-<!-- MAIN -->
-<main>
-    <div class="head-title">
-        <div class="left">
-            <h1>Account</h1>
-            <ul class="breadcrumb">
-                <li>
-                    <a href="#">Account</a>
-                </li>
-                <li><i class='bx bx-chevron-right' ></i></li>
-                <li>
-                    <a class="active" href="#">Profile</a>
-                </li>
-            </ul>
+    <main>
+        <div class="header">
+            <div class="left">
+                <h1>Account</h1>
+                <ul class="breadcrumb">
+                    <li><a href="#">Product</a></li>
+                    /
+                    <li><a href="#" class="active">Dashboard</a></li>
+                </ul>
+            </div>
+           
         </div>
-        <a href="#" class="btn-download">
-            <i class='bx bxs-cloud-download' ></i>
-            <span class="text">Download PDF</span>
-        </a>
-    </div>
 
-    <div class="profile-info text-center">
-        <a href="https://api.whatsapp.com/send?phone=62812114078903" target="_blank">
-            <div class="profile-picture">
-                <img src="/images/profile.jpg" alt="Profile Picture" class="rounded-circle" style="width: 200px" height="200px">
+
+
+        <!-- Profile Section -->
+        <div class="profile-section">
+            <div class="profile-card">
+                <img src="/images/profile.jpg" alt="Profile Picture" class="profile-img">
+                <h3 class="profile-name">GerylF</h3>
+                <p class="profile-email">Gerl@gmail.com</p>
+                <div class="profile-info">
+                    <div class="profile-info-item">
+                        <span class="info-title">Joined</span>
+                        <span class="info-value">January 1, 2020</span>
+                    </div>
+                    <div class="profile-info-item">
+                        <span class="info-title">Role</span>
+                        <span class="info-value">Admin</span>
+                    </div>
+                </div>
+                <div class="profile-actions">
+                    <button class="btn btn-edit-profile">Edit Profile</button>
+                    {{-- <button class="btn btn-logout">Logout</button> --}}
+                </div>
             </div>
-            <div class="profile-details">
-                <p><strong>ID Account:</strong> 1234567890</p>
-                <p><strong>Nama:</strong> Gerskuy</p>
-                <p><strong>Nomor Telepon:</strong> 081234567890</p>
-            </div>
-        </a>
-    </div>
-    </div>
-</main>
-<!-- MAIN -->
+        </div>
+        <!-- End of Profile Section -->
 
+    </main>
 
-</section>
-<!-- CONTENT -->
-
+</div>
 @endsection
