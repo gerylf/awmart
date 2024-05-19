@@ -1,3 +1,4 @@
+
 @extends('Layout.regLog.layoutLogres')
 
 @section('content')

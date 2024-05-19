@@ -7,11 +7,14 @@ use Illuminate\Http\Request;
 
 class RegisterController extends Controller
 {
-    public function store(Request $request){
+    public function store(Request $request)
+    {
         $this->validate($request, [
             'name' => 'required',
             'email' => 'required',
             'password' => 'required',
+            'phoneNumber' => 'required',
+
         ]);
 
         $input = $request->all();

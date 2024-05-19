@@ -2,24 +2,53 @@ body {
     background: url("/images/back.jpg") no-repeat center center fixed;
     background-size: cover;
     height: 100vh; /* Ensures the background covers the entire viewport */
+    margin: 0; /* Removes default margin */
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
 }
+
 .card {
     background-color: rgba(
         255,
         255,
         255,
-        0.9
+        0.6
     ); /* Semi-transparent background for the card */
-    border: 1px solid #dee2e6;
+    border: 1px solid rgba(255, 255, 255, 0.4); /* Semi-transparent border */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-.card {
     max-width: 500px; /* Sets a maximum width for the card */
     width: 100%; /* Ensures the card takes up the full width available */
+    margin: 20px; /* Adds some margin to ensure spacing on smaller screens */
+    padding: 20px; /* Adds padding inside the card */
+    border-radius: 16px; /* Rounds the corners of the card */
+}
+
+.card-header {
+    background-color: rgba(
+        0,
+        123,
+        255,
+        0.8
+    ); /* Semi-transparent background for the header */
+    color: #fff; /* White text color */
+}
+
+.card-body {
+    background-color: rgba(
+        255,
+        255,
+        255,
+        0.6
+    ); /* Semi-transparent background for the body */
+}
+
+.card-footer {
+    background-color: rgba(
+        255,
+        255,
+        255,
+        0.6
+    ); /* Semi-transparent background for the footer */
+    color: #000; /* Black text color */
 }
