@@ -34,63 +34,89 @@
         </form>
     </div>
     <div style="margin-top: 50px;"></div>
-    <!-- Card untuk produk yang dipesan -->
-    <div class="card">
-        <div class="card-header">
-            <h5>Produk yang Dipesan</h5>
-        </div>
-        <div class="card-body">
-            <!-- Card untuk setiap produk -->
-            <div class="row align-items-center mt-3">
-                <div class="col-auto">
-                    <img src="/images/taro.png" alt="Product Image" style="width: 80px;">
-                </div>
-                <div class="col">
-                    <div class="row">
-                        <div class="col"><strong>Produk Dipesan:</strong> Taronet 3D potato</div>
-                        <div class="col"><strong>Harga Satuan:</strong> Rp 5.500,00</div>
-                        <div class="col"><strong>Jumlah:</strong>
-                            <!-- Tombol + dan - untuk jumlah produk -->
-                            <div class="d-flex justify-content-center align-items-center">
-                                <button class="btn btn-sm btn-outline-secondary"
-                                    onclick="decrementQuantity()">-</button>
-                                <input type="text" class="form-control text-center mx-2" id="quantityInput" value="1"
-                                    oninput="calculateSubtotal()">
-                                <button class="btn btn-sm btn-outline-secondary"
-                                    onclick="incrementQuantity()">+</button>
-                            </div>
+   <!-- Card untuk produk yang dipesan -->
+   <div class="card mb-1">
+    <div class="card-header">
+        <h5>Produk yang Dipesan</h5>
+    </div>
+    <div class="card-body">
+        <!-- Card untuk setiap produk -->
+        <div class="row align-items-center mt-3">
+            <div class="col-auto">
+                <img src="/images/taro.png" alt="Product Image" style="width: 80px;">
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="col"><strong>Produk Dipesan:</strong> Taronet 3D potato</div>
+                    <div class="col"><strong>Harga Satuan:</strong> Rp 5.500,00</div>
+                    <div class="col"><strong>Jumlah:</strong>
+                        <!-- Tombol + dan - untuk jumlah produk -->
+                        <div class="d-flex justify-content-center align-items-center">
+                            <button class="btn btn-sm btn-outline-secondary" onclick="decrementQuantity()">-</button>
+                            <input type="text" class="form-control text-center mx-2" id="quantityInput" value="1" oninput="calculateSubtotal()">
+                            <button class="btn btn-sm btn-outline-secondary" onclick="incrementQuantity()">+</button>
                         </div>
-                        <div class="col"><strong>Subtotal:</strong> <span id="subtotal">Rp 5.500,00</span></div>
                     </div>
+                    <div class="col"><strong>Subtotal:</strong> <span id="subtotal">Rp 5.500,00</span></div>
                 </div>
             </div>
-            <!-- Duplicate this block for each product -->
-            <div class="row align-items-center mt-3">
-                <div class="col-auto">
-                    <img src="/images/taro.png" alt="Product Image" style="width: 80px;">
-                </div>
-                <div class="col">
-                    <div class="row">
-                        <div class="col"><strong>Produk Dipesan:</strong> Taronet 3D potato</div>
-                        <div class="col"><strong>Harga Satuan:</strong> Rp 5.500,00</div>
-                        <div class="col"><strong>Jumlah:</strong>
-                            <!-- Tombol + dan - untuk jumlah produk -->
-                            <div class="d-flex justify-content-center align-items-center">
-                                <button class="btn btn-sm btn-outline-secondary"
-                                    onclick="decrementQuantity()">-</button>
-                                <input type="text" class="form-control text-center mx-2" id="quantityInput" value="1"
-                                    oninput="calculateSubtotal()">
-                                <button class="btn btn-sm btn-outline-secondary"
-                                    onclick="incrementQuantity()">+</button>
-                            </div>
-                        </div>
-                        <div class="col"><strong>Subtotal:</strong> <span id="subtotal">Rp 5.500,00</span></div>
-                    </div>
-                </div>
-            </div>
-            <!-- End of duplicate block -->
         </div>
     </div>
+</div>  
+
+<!-- Card untuk setiap produk -->
+<div class="card mb-1">
+    <div class="card-body">
+        <!-- Card untuk setiap produk -->
+        <div class="row align-items-center mt-3">
+            <div class="col-auto">
+                <img src="/images/taro.png" alt="Product Image" style="width: 80px;">
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="col"><strong>Produk Dipesan:</strong> Taronet 3D potato</div>
+                    <div class="col"><strong>Harga Satuan:</strong> Rp 5.500,00</div>
+                    <div class="col"><strong>Jumlah:</strong>
+                        <!-- Tombol + dan - untuk jumlah produk -->
+                        <div class="d-flex justify-content-center align-items-center">
+                            <button class="btn btn-sm btn-outline-secondary" onclick="decrementQuantity()">-</button>
+                            <input type="text" class="form-control text-center mx-2" id="quantityInput" value="1" oninput="calculateSubtotal()">
+                            <button class="btn btn-sm btn-outline-secondary" onclick="incrementQuantity()">+</button>
+                        </div>
+                    </div>
+                    <div class="col"><strong>Subtotal:</strong> <span id="subtotal">Rp 5.500,00</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Card untuk setiap produk -->
+<div class="card mb-3">
+    <div class="card-body">
+        <!-- Card untuk setiap produk -->
+        <div class="row align-items-center mt-3">
+            <div class="col-auto">
+                <img src="/images/taro.png" alt="Product Image" style="width: 80px;">
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="col"><strong>Produk Dipesan:</strong> Taronet 3D potato</div>
+                    <div class="col"><strong>Harga Satuan:</strong> Rp 5.500,00</div>
+                    <div class="col"><strong>Jumlah:</strong>
+                        <!-- Tombol + dan - untuk jumlah produk -->
+                        <div class="d-flex justify-content-center align-items-center">
+                            <button class="btn btn-sm btn-outline-secondary" onclick="decrementQuantity()">-</button>
+                            <input type="text" class="form-control text-center mx-2" id="quantityInput" value="1" oninput="calculateSubtotal()">
+                            <button class="btn btn-sm btn-outline-secondary" onclick="incrementQuantity()">+</button>
+                        </div>
+                    </div>
+                    <div class="col"><strong>Subtotal:</strong> <span id="subtotal">Rp 5.500,00</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
     <!-- Metode Pembayaran -->
     <div class="container mt-4">

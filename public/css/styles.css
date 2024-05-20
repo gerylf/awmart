@@ -103,7 +103,15 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+.status-active {
+  color: green;
+  font-weight: bold;
+}
 
+.status-inactive {
+  color: red;
+  font-weight: bold;
+}
 hr {
   margin: 1rem 0;
   color: inherit;
@@ -3613,7 +3621,7 @@ textarea.form-control-lg {
   --bs-nav-link-hover-color: var(--bs-link-hover-color);
   --bs-nav-link-disabled-color: #6c757d;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap;  
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;

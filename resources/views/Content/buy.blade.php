@@ -127,7 +127,8 @@
                     </div>
                     <div class="col"><strong>Total:</strong> <span id="totalSubtotal">Rp 5.500,00</span></div>
                     <div class="col-auto">
-                        <button class="btn btn-success" style="color: white; background-color: #E86F24;">Checkout</button>
+                        <a class="btn btn-success" style="color: white; background-color: #E86F24;" href="/pemesanan">Checkout</a>
+
                     </div>
                 </div>
             </div>

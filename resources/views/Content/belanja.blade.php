@@ -157,5 +157,6 @@
         <!-- Tambahkan card lainnya sesuai kebutuhan -->
     </div>
 </div>
+<div style="margin-top: 100px;"></div> <!-- Jarak antara navbar dan konten -->
 @include('Component.footer')
 @endsection
