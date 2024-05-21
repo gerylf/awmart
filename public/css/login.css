@@ -1,0 +1,90 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    /* Mengganti font menjadi Montserrat */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('img/background-image-login2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    border: 1px solid #007bff;
+    /* Memberikan border biru tipis */
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    color: #333;
+    text-align: left;
+    /* Memposisikan teks ke kiri */
+}
+
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 12px);
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #143C85;
+    color: #fff;
+    border: none;
+    padding: 14px 20px;
+    /* Perbesar tombol */
+    border-radius: 6px;
+    /* Lebih bulat */
+    cursor: pointer;
+    font-size: 16px;
+    /* Perbesar ukuran teks tombol */
+    width: 100%;
+    /* Membuat tombol sebesar 100% */
+}
+
+button:hover {
+    background-color: #333;
+    /* Warna hover yang lebih gelap */
+}
+
+.register-link {
+    margin-top: 20px;
+    color: #000;
+    /* Ubah warna teks menjadi hitam */
+}
+
+.register-link a {
+    color: #143C85;
+    text-decoration: none;
+    font-weight: bold;
+    /* Teks "Register" menjadi tebal */
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    color: red;
+    font-style: italic;
+    text-align: center;
+    margin-top: 10px;
+}
