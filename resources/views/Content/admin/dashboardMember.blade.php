@@ -42,31 +42,6 @@
                 <span>Download CSV</span>
             </a>
         </div>
-        <ul class="insights">
-            <li>
-                <i class='bx bx-money'></i>
-                <span class="info">
-                    <h3>$15,000</h3>
-                    <p>Pengeluaran per Bulan</p>
-                </span>
-            </li>
-            <li>
-                <i class='bx bx-dollar'></i>
-                <span class="info">
-                    <h3>$30,000</h3>
-                    <p>Pendapatan per Bulan</p>
-                </span>
-            </li>
-            <li>
-                <i class='bx bx-group'></i>
-                <span class="info">
-                    <h3>500</h3>
-                    <p>Total Member</p>
-                </span>
-            </li>
-        </ul>
-        <!-- End of Insights -->
-
         <!-- Table Data -->
         <div class="table-data">
             <table class="tableData">
